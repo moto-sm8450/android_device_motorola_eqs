@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "SystemUIResEqs",
+    name: "SystemUIResDevice",
     vendor: true
 }
