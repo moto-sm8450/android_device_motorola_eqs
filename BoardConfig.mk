@@ -22,15 +22,6 @@ include device/motorola/sm8475-common/BoardConfigCommon.mk
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := eqs
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/manifest.xml
-ODM_MANIFEST_SKUS += dne
-ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/vintf/manifest_dne.xml
-ODM_MANIFEST_SKUS += dn
-ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/vintf/manifest_dn.xml
-ODM_MANIFEST_SKUS += n
-ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/vintf/manifest_n.xml $(COMMON_PATH)/vintf/manifest_ss.xml
-
 # Kernel
 TARGET_KERNEL_CONFIG += \
 	vendor/ext_config/moto-waipio-eqs.config

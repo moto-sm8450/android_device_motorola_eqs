@@ -90,5 +90,15 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 $(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.moto_sm8475-richtap)
 $(call soong_config_set,qti_vibrator,use_effect_stream,true)
 
+# VINTF
+DEVICE_MANIFEST_FILE += device/motorola/eqs/vintf/manifest.xml
+ODM_MANIFEST_SKUS += dne
+ODM_MANIFEST_DNE_FILES := $(LOCAL_PATH)/vintf/manifest_dne.xml
+ODM_MANIFEST_SKUS += dn
+ODM_MANIFEST_DN_FILES := $(LOCAL_PATH)/vintf/manifest_dn.xml
+ODM_MANIFEST_SKUS += n
+ODM_MANIFEST_N_FILES := $(LOCAL_PATH)/vintf/manifest_n.xml \
+    device/motorola/sm8475-common/vintf/manifest_ss.xml
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/eqs/eqs-vendor.mk)
