@@ -34,6 +34,6 @@ PRODUCT_MODEL := motorola edge 30 ultra
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DeviceProduct="eqs_ge" \
-    BuildDesc="eqs_ge-user 14 U1SQS34.52-21-1-15 b8994a-9634a release-keys" \
-    BuildFingerprint="motorola/eqs_ge/eqs:14/U1SQS34.52-21-1-15/b8994a-9634a:user/release-keys"
+    DeviceProduct="eqs_g" \
+    BuildDesc="eqs_g-user 15 V1SQS35H.58-10-8-4 795612-5831a release-keys" \
+    BuildFingerprint="motorola/eqs_g/eqs:15/V1SQS35H.58-10-8-4/795612-5831a:user/release-keys"

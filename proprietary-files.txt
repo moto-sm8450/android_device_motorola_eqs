@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from 14-U1SQS34.52-21-1-15 b8994a-9634a release-keys.
+# All unpinned blobs below are extracted from 15 V1SQS35H.58-10-8-4 795612-5831a release-keys.
 
 # ACDB Data
 vendor/etc/acdbdata/waipio_mtp/MTP_acdb_cal.acdb
