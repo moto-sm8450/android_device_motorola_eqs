@@ -23,6 +23,7 @@ include device/motorola/sm8475-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := eqs
 
 # HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 ODM_MANIFEST_SKUS += dne
 ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/manifest_dne.xml
 ODM_MANIFEST_SKUS += dn
