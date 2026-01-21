@@ -85,7 +85,7 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Vibrator
 $(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.moto_sm8475-richtap)
-$(call soong_config_set,qti_vibrator,use_effect_stream,true)
+$(call soong_config_set_bool,qti_vibrator,use_effect_stream,true)
 
 # VINTF
 DEVICE_MANIFEST_FILE += device/motorola/eqs/vintf/manifest.xml
