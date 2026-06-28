@@ -17,15 +17,17 @@ vendor/lib/rfsa/adsp/libmctfengine_skel.so
 
 # Camera
 vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
-vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc
 vendor/etc/eva/facedetection/model3.dat
 vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted
+vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc
 vendor/lib64/camera/arcsoft_dc_calibration_u.bin
 vendor/lib64/camera/com.qti.ois.mot_bu63169.so
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
+vendor/lib64/hw/camera.qcom.so
+vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.qseeaon.so
 vendor/lib64/com.qti.qseeutils.so
@@ -39,8 +41,6 @@ vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/frontier_arcsoft_portrait_super_night_se_raw.bin
 vendor/lib64/frontier_arcsoft_super_night_raw.bin
 vendor/lib64/frontier_arcsoft_super_night_se_raw.bin
-vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libAncHumanSegFigureFusion.so
 vendor/lib64/libFace3DTA.so
 vendor/lib64/libFace3D_hlos.so
@@ -345,10 +345,10 @@ system_ext/bin/motsettings
 system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
 
 # Moto Permissions
-product/etc/permissions/com.motorola.camera3.xml:vendor/etc/permissions/com.motorola.camera3.xml
 product/etc/permissions/com.motorola.camera3.content.ai.xml:vendor/etc/permissions/com.motorola.camera3.content.ai.xml
 product/etc/permissions/com.motorola.camera3.eqs.xml:vendor/etc/permissions/com.motorola.camera3.eqs.xml
 product/etc/permissions/com.motorola.camera3.lens.xml:vendor/etc/permissions/com.motorola.camera3.lens.xml
+product/etc/permissions/com.motorola.camera3.xml:vendor/etc/permissions/com.motorola.camera3.xml
 product/etc/permissions/com.motorola.moto-uirefresh.xml
 
 # NFC - configs
@@ -382,10 +382,6 @@ vendor/lib64/panel_als_comp_filter_eqs_csotc6.so
 vendor/lib64/panel_als_comp_filter_eqs_tianma.so
 
 # Sensor - configs
-vendor/etc/sensors/als_comp_config.xml
-vendor/etc/sensors/als_comp_tf_csotc4.config
-vendor/etc/sensors/als_comp_tf_csotc6.config
-vendor/etc/sensors/als_comp_tf_tianma.config
 vendor/etc/sensors/config/icm4x6xx_0.json
 vendor/etc/sensors/config/mot_camgest.json
 vendor/etc/sensors/config/mot_chopchop.json
@@ -445,6 +441,10 @@ vendor/etc/sensors/config/waipio_default_sensors.json
 vendor/etc/sensors/config/waipio_dynamic_sensors.json
 vendor/etc/sensors/config/waipio_irq.json
 vendor/etc/sensors/config/waipio_power_0.json
+vendor/etc/sensors/als_comp_config.xml
+vendor/etc/sensors/als_comp_tf_csotc4.config
+vendor/etc/sensors/als_comp_tf_csotc6.config
+vendor/etc/sensors/als_comp_tf_tianma.config
 vendor/etc/sensors/sns_reg_config
 
 # Thermal engine - configs
